@@ -1,0 +1,95 @@
+body{
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    
+}
+.header{
+    margin: 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+.header nav ul{
+    list-style-type: none;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header ul li i{
+   font-size: smaller;
+   justify-content: flex-end;
+}
+#logo{
+    font-size: 30px;
+    color: blueviolet;
+    justify-content: flex-start;
+    margin: 0%;
+    padding: 0;
+    
+}
+section{
+    
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    
+    
+}
+.all{
+    display: flex;
+    flex-direction: row;
+}
+section .products{
+    
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+.contact{
+    background-color: white;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    align-content: center;
+}
+.contact button{
+    margin: 10px;
+    padding: 10px;
+}
+.contact input{
+    margin: 10px;
+    padding: 10px;
+}
+section h3{
+   align-content: center;
+   color: black;
+}
+
+@media only screen and (max-width: 768px){
+    .all{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .header{
+        font-size: 15px;
+    }
+    #logo{
+        font-size: 25px;
+    }
+    .contact{
+        margin:auto;
+        width: fit-content;
+    }
+}
